@@ -1,4 +1,7 @@
-<?php include 'app/fct.php'?>
+<?php 
+  include 'app/fct.php';
+  include 'conf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>EXO 2025</h1>
+    <h1 class="text-center">EXO 2025</h1>
+    <hr>
     <?php
         $dossier = "lpb";
         $dossiers = listerLesDossiers($dossier);
@@ -24,6 +28,7 @@
         }
         echo "</ol>";
     ?>
+    <?php echo HTMLFooter(); ?>
   </div>
 </body>
 </html>

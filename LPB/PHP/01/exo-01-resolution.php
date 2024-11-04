@@ -1,3 +1,4 @@
+<p><a href="javascript:history.back()">back</a> <br></p>
 <?php
 /*
   Exercice 1 : Afficher un texte simple
