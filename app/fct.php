@@ -32,4 +32,13 @@ function listerLesDossiers() {
         return is_dir($dossier) && $dossier !== "." && $dossier !== "..";
     });
     return $dossiers;
-}   
+}
+
+function HTMLFooter() {    
+    $html = '
+        <footer class="text-center mt-5"> 
+            <span class="small">'. APP_VERSION . '</span>
+        </footer>
+    ';
+    return $html;
+}

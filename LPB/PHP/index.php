@@ -1,4 +1,7 @@
-<?php include '../../app/fct.php'?>
+<?php 
+  include '../../app/fct.php';
+  include '../../conf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +12,25 @@
 </head>
 <body>
   <div class="container">
-    <h1>EXO PHP</h1>
+    <h1 class="text-center">EXO PHP</h1>
+    <hr>
     <?php
         $dossier = "php";
         $dossiers = listerLesDossiers($dossier);
 
         echo '<p><a href="../">back</a></p>';
+        echo "<h3>En rapport avec les leçons :</h3>";
         echo "<ol>";
         foreach($dossiers as $dossier) {
-            if ($dossier === "app") {
+            if ($dossier === "app" || $dossier === "00") {
                 continue;
             }
-            echo "<li><a href='$dossier'>$dossier</a></li>";
+            $titre = @file_get_contents($dossier.'/title.html'); 
+            echo "<li><a href='$dossier'>$dossier</a> : <em>$titre</em></li>";
         }
         echo "</ol>";
     ?>
+    <?php echo HTMLFooter(); ?>
   </div>
 </body>
 </html>

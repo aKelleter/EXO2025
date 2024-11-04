@@ -1,3 +1,4 @@
+<p><a href="javascript:history.back()">back</a><br></p>
 <?php
 /*
  Exercice 2 : Afficher le menu de navigation d'un site web avec la structure echo
