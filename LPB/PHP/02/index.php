@@ -1,3 +1,4 @@
+<?php include '../../../app/fct.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +9,19 @@
 </head>
 <body>
   <div class="container">
-  <?='<p><a href="index.php">back</a></p>'?>
-    <pre>
+  <h1>Liste des exercices</h1>
+    <?php
+        $dossier = ".";
+        $explications = listerLesFichiersExplications($dossier);
 
-      Exercice 1 : Afficher un texte simple
-
-        Objectif : Afficher un message de bienvenue.
-
-        Instructions :
-
-          1.	Créez un fichier PHP (par exemple exercice1.php).
-          2.	Utilisez la structure echo pour afficher le texte : “Bienvenue sur notre site !”.
-    </pre>
-    <div>
-      <a href="exo-01-resolution.php">exo-01-resolution.php</a>
-    </div>  
+        echo '<p><a href="../">back</a></p>';
+        echo "<ol>";
+        foreach($explications as $explication) {
+            echo "<li><a href='$explication'>$explication</a></li>";
+        }
+        echo "</ol>";
+    ?>
   </div>
 </body>
 </html>
-
-
-
 

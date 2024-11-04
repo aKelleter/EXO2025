@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-  <?='<p><a href="../">back</a></p>'?>
+  <?='<p><a href="index.php">back</a></p>'?>
   <pre>
     Exercice 2 : Afficher le menu de navigation d'un site web avec la structure echo
 

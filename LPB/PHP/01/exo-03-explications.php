@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-  <?='<p><a href="../">back</a></p>'?>
+  <?='<p><a href="index.php">back</a></p>'?>
   <pre>
     Exercice 3 : Afficher  un texte simple avec echo, print et heredoc
 
