@@ -17,7 +17,7 @@
 
         Instructions :
 
-          1.	Créez un fichier PHP (par exemple exercice1.php).
+          1.	Créez un fichier PHP (par exemple 02/commentaire.php).
           2.	Utilisez les trois syntaxes de commentaires
     </pre>
     <div>

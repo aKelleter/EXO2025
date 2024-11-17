@@ -8,11 +8,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>lpb/php/01/exos</title>
+  <title>lpb/php/00/exos</title>
 </head>
 <body>
   <div class="container">
   <h1 class="text-center">Liste des exercices</h1>
+  <p>
+    Quelques conseils : <br>
+    <br>
+    Testez chaque opérateur séparément avant de les combiner. <br>
+    Utilisez des commentaires pour expliquer ce que fait chaque ligne de code. <br>
+    Essayez de manipuler différentes valeurs pour voir comment les opérateurs se comportent. <br>
+    <br>
+    Ces exercices vous permettront de comprendre les bases des opérateurs en PHP. Bon apprentissage ! 😊 <br>
+  </p>
   <hr>
     <?php
         $dossier = ".";

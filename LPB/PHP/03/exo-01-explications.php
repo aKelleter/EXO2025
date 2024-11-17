@@ -17,7 +17,7 @@
 
         Instructions :
 
-          1.  Créez un fichier PHP (par exemple exercice1.php).
+          1.  Créez un fichier PHP (par exemple 03/afficher.php).
 
           2.  Ecrivez une première instruction avec la structure 'echo' pour afficher le texte suivant : 
               "Le temps est toujours cruel. Il semble s'écouler à des vitesses différentes pour chacun...",

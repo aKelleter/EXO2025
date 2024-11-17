@@ -16,12 +16,12 @@
         - Accueil
         - un espace ' '
         - Produits
-        - un espace ''
+        - un espace ' '
         - Contact
 
       Instructions :
 
-        1.	Créez un fichier PHP (par exemple exercice2.php).
+        1.	Créez un fichier PHP (par exemple 01/menu.php).
         2.	Utilisez la structure echo pour afficher le menu : “Accueil Produits Contact”.
     </pre>  
     <div>

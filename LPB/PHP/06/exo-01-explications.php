@@ -11,14 +11,18 @@
   <?='<p><a href="index.php">back</a></p>'?>
     <pre>
 
-      Exercice 1 : Afficher un texte simple
+      Exercice 1 : Travailler avec les constantes
 
-        Objectif : Afficher un message de bienvenue.
+        Objectif : Apprendre à travailler avec les constantes en PHP.
 
         Instructions :
 
-          1.	Créez un fichier PHP (par exemple 01/hello.php).
-          2.	Utilisez la structure echo pour afficher le texte : “Bienvenue sur notre site !”.
+          1.  Créez un fichier PHP (par exemple 06/constante.php).
+          2.  Définissez une constante nommée NOM_SITE avec la valeur "JEDI NIGHT"
+          3.  Affichez la valeur de la constante NOM_SITE.
+          4.  Utilisez la constante __FILE__ pour afficher le chemin complet du fichier.
+          5.  Utilisez la constante __LINE__ pour afficher le numéro de la ligne courante.
+          6.  Afficher la version PHP de votre serveur.
     </pre>
     <div>
       <a href="exo-01-resolution.php">exo-01-resolution.php</a>

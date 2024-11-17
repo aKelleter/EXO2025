@@ -16,7 +16,7 @@
 
       Instructions :
 
-        1. Créez un fichier PHP (par exemple exercice3.php).
+        1. Créez un fichier PHP (par exemple 01/afficher.php).
         2. Utilisez la structure echo pour afficher le texte suivant : "Bienvenue sur notre webshop !&lt;br&gt;".
         3. Utilisez la structure print pour afficher le texte suivant : "De nouveaux produits sont disponibles !&lt;br&gt;".  
         4. Utilisez la syntaxe heredoc pour afficher le text suivant : “Grosse promotion sur les clés USB&lt;br&gt;”.
