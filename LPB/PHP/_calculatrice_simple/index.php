@@ -11,7 +11,7 @@
     <p>
         <a href="index.php">Reset</a>
     </p>
-    <form action="" method="get">
+    <form action="" method="post">
         <input type="text" name="nombre1" placeholder="Nombre 1">
         <input type="text" name="nombre2" placeholder="Nombre 2">
         <select name="operation">
