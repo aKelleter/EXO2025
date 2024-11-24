@@ -21,7 +21,7 @@
         echo "<h3></h3>";
         echo "<ol>";
         foreach($dossiers as $dossier) {
-            if ($dossier === "app" || $dossier === ".git") {
+            if ($dossier === "app" || $dossier === ".git" || $dossier === "assets" || $dossier === "vendors") {
                 continue;
             }
             echo "<li><a href='$dossier'>$dossier</a></li>";
