@@ -1,20 +1,38 @@
-<p><a href="javascript:history.back()">back</a><br></p>
-<?php
-/*
- Exercice 2 : Afficher le menu de navigation d'un site web avec la structure echo
+<?php require_once '../../../app/fct.php';?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPB - PHP - 01 - EXO-02</title>
+  <?= HTMLCss() ?>
 
-    Objectif : Afficher le menu sur une seule ligne en décomposant les éléments suivants :
-      - Accueil
-      - un espace ' '
-      - Produits
-      - un espace ''
-      - Contact
+</head>
+<body>
+  <div class="main mt-5">  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 mt-5">
+          <p><a href="javascript:history.back()">back</a><br></p>
+          <h3>Résultats du code</h3>
+          <div>
+            <?php
+              echo "Acceuil", " ", "Produits", " ", "Contact";
+            ?>
+          </div>
+          <h3 class="mt-5">Le code source</h3>
+          <div>
+            <textarea class="codemirror-textarea mb-2" name="code-src" id="code-src" cols="100%">            
+              echo "Acceuil", " ", "Produits", " ", "Contact";         
+            </textarea>
+          </div>
+        </div>
+        <div class="col-md-1"></div>  
+      </div>    
+    </div>  
+  </div>
 
-    Instructions :
-
-	    1.	Créez un fichier PHP (par exemple 01/menu.php).
-	    2.	Utilisez la structure echo pour afficher le menu : “Accueil Produits Contact”.
-
- */
-
-echo "Acceuil", " ", "Produits", " ", "Contact";
+  <?= HTMLJs() ?>
+</body>
+</html>
