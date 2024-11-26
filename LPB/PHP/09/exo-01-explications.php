@@ -1,16 +1,14 @@
 <?php require_once '../../../app/fct.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>lpb/php/01/exo-01</title>
-  <?= HTMLCss() ?>
+  <?= HTMLhead("../../../", APP_NAME." : Exercice") ?>
 </head>
 <body>
   <div class="main">
     <div class="container">
+      <h1 class="text-center">Liste des exercices</h1>
+      <hr>
       <p><a href="index.php">back</a></p>
       <h3>Exercice 1 : Vérifier de la parité d'un nombre</h3>
       <div class="mt-3">        
@@ -23,7 +21,6 @@
           - Afficher "Le nombre est pair" ou "Le nombre est impair" en fonction du cas. <br>
           - Modifiez la valeur de la variable pour tester le script. <br>
         </div>
-
       </div>       
       <div class="mt-3">
         <a href="exo-01-resolution.php">Solution exercice 1</a>

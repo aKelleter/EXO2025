@@ -1,38 +1,37 @@
+<?php 
+  include '../../../conf.php';
+  include '../../../app/fct.php';  
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>lpb/php/07/exo-05</title>
+  <?= HTMLhead("../../../", APP_NAME." : Exercice") ?>
 </head>
 <body>
   <div class="container">
-  <?='<p><a href="index.php">back</a></p>'?>
-    <pre>
+    <?= HTMLHeader("", "L'exercice") ?>
+    <?='<p><a href="index.php">back</a></p>'?>
+    <h3>Exercice 5 : Exercice sur les opérateurs d'incrémentation et de décrémentation</h3>
+    <div class="mt-3">        
+      Objectif :  Utiliser les opérateurs (++ et --) qui permettent d'incrémenter ou de décrémenter une variable. <br>
 
-      Exercice 5 : Exercice sur les opérateurs d'incrémentation et de décrémentation
-
-        Objectif : Utiliser les opérateurs (++ et --) qui permettent d'incrémenter ou de décrémenter une variable.
-
-        Instructions :
-
-          1.	Créez un fichier PHP (par exemple 07/op_incdesinc.php).
-          2.	Écrivez un script PHP qui :
-                  - Initialise une variable $z avec une valeur de 5.
-                  - Affichez la valeur de départ de $z.
-                  - Utilisez les opérateurs d'incrémentation (++) et de décrémentation (--) : $z++, ++$z, $z--, --$z
-                  - Affichez la valeur l'opération (opérateur) avec la structure echo ou autre.
-                  - Et affichez ensuite la valeur de $z après chaque opération.
-
-    </pre>
-    <div>
-      <a href="exo-05-resolution.php">exo-05-resolution.php</a>
-    </div>  
+        <div class="mt-3">
+          <u><b>Instructions</b></u> : <br>
+          1.	Créez un fichier PHP (par exemple 07/op_incdesinc.php). <br>
+          2.	Écrivez un script PHP qui : <br>
+                  - Initialise une variable $z avec une valeur de 5. <br>
+                  - Affichez la valeur de départ de $z. <br>
+                  - Utilisez les opérateurs d'incrémentation (++) et de décrémentation (--) : $z++, ++$z, $z--, --$z <br>
+                  - Affichez la valeur l'opération (opérateur) avec la structure echo ou autre. <br>
+                  - Et affichez ensuite la valeur de $z après chaque opération. <br>
+        </div>
+    </div>       
+    <div class="mt-3">
+      <a href="exo-05-resolution.php" class="btn btn-primary">Solution de l'exercice</a>
+    </div>
+    <hr>   
+    <?= HTMLFooter() ?>
   </div>
+  <?= HTMLJs() ?>
 </body>
 </html>
-
-
-
-

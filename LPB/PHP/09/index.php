@@ -3,13 +3,9 @@
   include '../../../conf.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>lpb/php/00/exos</title>
-  <?= HTMLCss() ?>
+  <?= HTMLhead("../../../", APP_NAME." : Liste des exercices PHP") ?>
 </head>
 <body>
   <div class="container">
@@ -27,9 +23,9 @@
         }
         echo "</ol>";
     ?>
-    <?php echo HTMLFooter(); ?>
-    <?= HTMLJs() ?>
+    <?php echo HTMLFooter(); ?>   
   </div>
+  <?= HTMLJs() ?>
 </body>
 </html>
 
