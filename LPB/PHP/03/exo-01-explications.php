@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "L'exercice") ?>
+    <?= HTMLHeader("../../../", "L'exercice") ?>
     <?='<p><a href="index.php">back</a></p>'?>
     <h3>Exercice 1 : Utiliser les structures 'echo' et 'print' pour afficher du contenu à l'écran</h3>
     <div class="mt-3">        

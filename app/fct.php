@@ -87,7 +87,56 @@ function HTMLJs($path = "../../../") {
 function HTMLHeader($path, $title) {
     $html = '
         <h1 class="text-center">' . $title . '</h1>
+        '.HTMLNavigation($path).'
         <hr>
     ';
     return $html;
+}
+
+function HTMLNavigation($path) {
+
+    $path = empty($path) ? './' : $path;
+    $html = '
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="'.$path.'index.php">ExO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="'.$path.'index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="'.$path.'LPB/index.php">LPB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="'.$path.'LPB/PHP/index.php">PHP</a>
+                </li>                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ExO PHP
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/01/index.php">01 - Hello World</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/02/index.php">02 - Commentaires</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/03/index.php">03 - echo / print</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/04/index.php">04 - Variables</a></li>                   
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/06/index.php">06 - Constantes</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/07/index.php">07 - Opérateurs</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/08/index.php">08 - Priorités des Op.</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/09/index.php">09 - if, else, elseif</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/10/index.php">10 - Ternaire / fusion null</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/11/index.php">11 - switch case</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/_calculatrice_simple/index.php">Calculatrice simple - formulaire</a></li>
+                </ul>
+                </li>                               
+            </ul>
+            </div>
+        </div>
+    </nav>';
+
+return $html;
 }

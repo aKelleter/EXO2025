@@ -10,7 +10,7 @@
 <body>
 <div class="container">
   <div class="container">
-      <?= HTMLHeader("", "L'exercice") ?>
+      <?= HTMLHeader("../../../", "L'exercice") ?>
       <?='<p><a href="index.php">back</a></p>'?>
       <h3>Exercice 2 : Afficher le menu de navigation d'un site web avec la structure echo</h3>
       <div class="mt-3">        

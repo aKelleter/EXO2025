@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <?= HTMLHeader("", "Solution") ?>
+          <?= HTMLHeader("../../../", "Solution") ?>
           <p><a href="javascript:history.back()">back</a><br></p>
           <h3>Exercice 2 : Afficher le menu de navigation d'un site web avec la structure echo</h3>
           <div class="mt-3">        

@@ -85,8 +85,8 @@ h6 {
 p {
     font-size: 1em;
     color: var(--color-deep-blue);   
-    margin-left: 1em;
-    padding: 0.5em;  
+    /*margin-left: 1em;*/
+    /*padding: 0.5em;  */
 }
 
 footer {

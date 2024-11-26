@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "L'exercice") ?>
+    <?= HTMLHeader("../../../", "L'exercice") ?>
     <?='<p><a href="index.php">back</a></p>'?>
     <h3>Exercice 2 : Exercice sur les opérateurs d'affectation</h3>
     <div class="mt-3">        

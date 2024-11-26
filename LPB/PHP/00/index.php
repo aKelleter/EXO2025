@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "Liste des exercices") ?>
+    <?= HTMLHeader("../../../", "Liste des exercices") ?>
     <?php
         $dossier = ".";
         $explications = listerLesFichiersExplications($dossier);

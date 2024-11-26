@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <?= HTMLHeader("", "Solution") ?>
+          <?= HTMLHeader("../../../", "Solution") ?>
           <p><a href="javascript:history.back()">back</a><br></p>
           <h3>Exercice 2 : Exercice sur les opérateurs d'affectation</h3>
           <div class="mt-3">        

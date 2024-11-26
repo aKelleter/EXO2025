@@ -9,8 +9,7 @@
 </head>
 <body>
   <div class="container">
-  <h1 class="text-center">Liste des exercices</h1>
-  <hr>
+    <?= HTMLHeader("../../../", "Liste des exercices") ?>   
     <?php
         $dossier = ".";
         $explications = listerLesFichiersExplications($dossier);
@@ -25,7 +24,7 @@
     ?>
     <?php echo HTMLFooter(); ?>
   </div>
-  <? HTMLJs() ?>
+  <?= HTMLJs("../../../") ?>
 </body>
 </html>
 

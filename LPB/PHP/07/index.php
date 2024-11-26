@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-  <h1 class="text-center">Liste des exercices</h1>
+  <?= HTMLHeader("../../../", "Liste des exercices") ?>   
   <p>
     Quelques conseils : <br>
     <br>

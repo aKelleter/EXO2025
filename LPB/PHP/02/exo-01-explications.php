@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "L'exercice") ?>
+    <?= HTMLHeader("../../../", "L'exercice") ?>
     <?='<p><a href="index.php">back</a></p>'?>
     <h3>Exercice 1 : Utiliser les trois types de commentaire</h3>
     <div class="mt-3">        
@@ -27,6 +27,6 @@
     <hr>   
     <?= HTMLFooter() ?>
   </div>
-  <?= HTMLJs() ?>
+  <?= HTMLJs("../../../") ?>
 </body>
 </html>

@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "EXO LPB") ?>
+    <?= HTMLHeader("../", "EXO LPB") ?>
     <?php
         $dossier = "php";
         $dossiers = listerLesDossiers($dossier);

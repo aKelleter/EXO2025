@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <?= HTMLHeader("", "Exercices PHP") ?>
+    <?= HTMLHeader("../../", "Exercices PHP") ?>
     <?php
         $dossier = "php";
         $dossiers = listerLesDossiers($dossier);
