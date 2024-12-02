@@ -27,49 +27,56 @@
             <button class="btn btn-primary" type="submit">Calculer</button>
         </form>
         <?php
+
+            // Si le formulaire est soumis et que les champs sont remplis
             if (
-                    (isset($_POST['nombre1']) && !empty($_POST['nombre1']) ) && 
+                    ($_SERVER['REQUEST_METHOD'] == 'POST') &&
+                    (isset($_POST['nombre1']) && !empty($_POST['nombre1']) || $_POST['nombre1'] == 0) && 
                     (isset($_POST['nombre2']) && !empty($_POST['nombre2']) || $_POST['nombre2'] == 0)
                 )
             {
-                $nombre1 = $_POST['nombre1'];
-                $nombre2 = $_POST['nombre2'];
-                $operation = $_POST['operation'];
+                if(is_numeric($_POST['nombre1']) && is_numeric($_POST['nombre2'])) {
+                    $nombre1 = $_POST['nombre1'];
+                    $nombre2 = $_POST['nombre2'];
+                    $operation = $_POST['operation'];
 
-                echo "<h3>Calcul de : $nombre1 $operation $nombre2</h3>";
+                    echo "<h3>Calcul de : $nombre1 $operation $nombre2</h3>";
 
-                switch ($operation) {
-                    case '+':
-                        $resultat = $nombre1 + $nombre2;
-                        break;
-                    case '-':
-                        $resultat = $nombre1 - $nombre2;
-                        break;
-                    case '*':
-                        $resultat = $nombre1 * $nombre2;
-                        break;
-                    case '/':
-                        if ($nombre2 == 0) {
-                            $resultat = "Division par zéro non autorisée, résultat indéfini";
+                    switch ($operation) {
+                        case '+':
+                            $resultat = $nombre1 + $nombre2;
                             break;
-                        }
-                        $resultat = $nombre1 / $nombre2;
-                        break;
-                    case '%':
-                        $resultat = $nombre1 % $nombre2;
-                        break;
-                    default:
-                        $resultat = "Erreur";
-                        break;
+                        case '-':
+                            $resultat = $nombre1 - $nombre2;
+                            break;
+                        case '*':
+                            $resultat = $nombre1 * $nombre2;
+                            break;
+                        case '/':
+                            if ($nombre2 == 0) {
+                                $resultat = "Division par zéro non autorisée, résultat indéfini";
+                                break;
+                            }
+                            $resultat = $nombre1 / $nombre2;
+                            break;
+                        case '%':
+                            $resultat = $nombre1 % $nombre2;
+                            break;
+                        default:
+                            $resultat = "Erreur";
+                            break;
+                    }
+                    echo "<h5>Résultat : $resultat</h5>";
+                }else {
+                    echo "<h5>Veuillez entrez des valeurs numériques</h5>";
                 }
-                echo "<h5>Résultat : $resultat</h5>";
             }else {
                 if (!empty($_POST)) {
                     echo "<h5>Veuillez entrez les valeurs à calculer</h5>";
                 }
-                
             }
         ?>
+              
         <?php echo HTMLFooter(); ?>
     </div>    
     <?= HTMLJs("../../../") ?>    

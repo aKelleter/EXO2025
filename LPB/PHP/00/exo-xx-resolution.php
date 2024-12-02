@@ -15,18 +15,29 @@
         <div class="col-md-10">
           <?= HTMLHeader("../../../", "Solution") ?>
           <p><a href="javascript:history.back()">back</a><br></p>
-          <h3>Exercice x : ...</h3>
-          <div class="mt-3">        
-            ...<br>
-
-            
-          <h3 class="mt-5">Une solution</h3>
+          <h3 class="mt-5">Réponse</h3>
+          <h4>Exercice x : ...</h4>
+          ...
+          <div class="mt-3">
+            <u><b>Instructions</b></u> : <br>
+            Code à complèter :
+            <pre>
+            ...
+            </pre>         
+          </div>
+          <h3 class="mt-5">Le code source</h3>
           <div>
             <textarea class="codemirror-textarea code-php mb-2" name="code-src" id="code-src" cols="100%">    
-            &lt;?php
+              &lt;?php
+               
+              ?&gt;
+            </textarea>
+          </div>
+          <h3 class="mt-5">Résultat de l'exécution du script</h3>
+          <div>             
+            <?php
              
-            ?&gt;
-            </textarea>            
+            ?>            
           </div>
         </div>
         <div class="col-md-1"></div>  
@@ -37,4 +48,3 @@
   <?= HTMLJs("../../../") ?>
 </body>
 </html>
-

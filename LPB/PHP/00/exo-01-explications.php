@@ -12,7 +12,7 @@
     <?= HTMLHeader("../../../", "L'exercice") ?>
     <?='<p><a href="index.php">back</a></p>'?>
     <h3>Exercice 1 : ...</h3>
-    <div class="mt-3">        
+    <div class="mt-3">   
       Objectif : ... <br>
 
         <div class="mt-3">
@@ -20,7 +20,7 @@
           - ... <br>
           - ... <br>  
         </div>
-    </div>       
+    </div>    
     <div class="mt-3">
       <a href="exo-01-resolution.php" class="btn btn-primary">Solution de l'exercice</a>
     </div>

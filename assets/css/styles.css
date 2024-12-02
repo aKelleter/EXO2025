@@ -300,6 +300,11 @@ a.link{
     margin: 0 !important;
 }
 
+.extra-small {
+    font-size: 0.5em;
+    font-style: italic;
+}
+
 
 /*
     IDs    

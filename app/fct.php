@@ -121,6 +121,7 @@ function HTMLNavigation($path) {
                     ExO PHP
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/index.php">La liste</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/01/index.php">01 - Hello World</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/02/index.php">02 - Commentaires</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/03/index.php">03 - echo / print</a></li>
@@ -130,9 +131,12 @@ function HTMLNavigation($path) {
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/08/index.php">08 - Priorités des Op.</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/09/index.php">09 - if, else, elseif</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/10/index.php">10 - Ternaire / fusion null</a></li>
-                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/11/index.php">11 - switch case</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/11/index.php">11 - Le switch case</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/12/index.php">12 - La boucle While</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/13/index.php">13 - La boucle do...while</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/_calculatrice_simple/index.php">Calculatrice simple - formulaire</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/_devinette/index.php">Devinette - while/if/readline</a></li>
                 </ul>
                 </li>                               
             </ul>
