@@ -16,7 +16,7 @@
           <?= HTMLHeader("../../../", "Solution") ?>
           <p><a href="javascript:history.back()">back</a><br></p>
           <h3 class="mt-5">Réponse</h3>
-          <h4>Exercice x : ...</h4>
+          <h4>Exercice 2 : ...</h4>
           ...
           <div class="mt-3">
             <u><b>Instructions</b></u> : <br>

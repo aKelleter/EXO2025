@@ -11,7 +11,7 @@
   <div class="container">
     <?= HTMLHeader("../../../", "L'exercice") ?>
     <?='<p><a href="index.php">back</a></p>'?>
-    <h3>Exercice x : ...</h3>
+    <h3>Exercice 2 : ...</h3>
     <div class="mt-3">   
       Objectif : ... <br>
 

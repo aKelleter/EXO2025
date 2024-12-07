@@ -135,6 +135,7 @@ function HTMLNavigation($path) {
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/11/index.php">11 - Le switch case</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/12/index.php">12 - La boucle While</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/13/index.php">13 - La boucle do...while</a></li>
+                    <li><a class="dropdown-item" href="'.$path.'LPB/PHP/14/index.php">14 - La boucle for</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/_calculatrice_simple/index.php">Calculatrice simple - formulaire</a></li>
                     <li><a class="dropdown-item" href="'.$path.'LPB/PHP/_devinette/index.php">Devinette - while/if/readline</a></li>
